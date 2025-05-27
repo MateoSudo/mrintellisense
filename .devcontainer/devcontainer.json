@@ -1,0 +1,32 @@
+{
+	"name": "Bun & PostgreSQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"forwardPorts": [
+		5432,3000
+	],
+
+	"postCreateCommand": "bun install",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode",
+				"prisma.prisma",
+				"ms-vscode.vscode-typescript-next",
+				"github.copilot",
+				"oven.bun-vscode",
+				"eamodio.gitlens",
+				"ms-edgedevtools.vscode-edge-devtools",
+				"ms-azuretools.vscode-docker", 
+				"pranaygp.vscode-css-peek",   
+				"ecmel.vscode-html-css",
+				"ms-vscode-remote.remote-containers"
+			]
+		}
+	},
+	"remoteUser": "root"
+}
